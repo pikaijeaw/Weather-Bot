@@ -1,0 +1,83 @@
+{
+  "mode": "paper",
+  "scan_interval_sec": 180,
+  "cities": [],
+  "telegram": true,
+  "hard_margin_c": 0.5,
+  "final_margin_c": 0.5,
+  "final_unseen_c": 0.75,
+  "final_delay_min": 90,
+  "final_min_obs": 18,
+  "final_max_gap_h": 3,
+  "late_enabled": true,
+  "late_min_hour": {
+    "max": 17,
+    "min": 12
+  },
+  "late_margin_c": 1.0,
+  "priors": {
+    "hard": [
+      100,
+      1
+    ],
+    "final": [
+      50,
+      1
+    ],
+    "late": [
+      2,
+      1
+    ],
+    "quake": [
+      50,
+      1
+    ],
+    "rain_month": [
+      50,
+      1
+    ],
+    "rain_month_final": [
+      30,
+      1
+    ],
+    "rain_cli": [
+      50,
+      1
+    ],
+    "rain_cli_final": [
+      20,
+      1
+    ],
+    "rain_metar": [
+      2,
+      1
+    ]
+  },
+  "confidence_q": 0.1,
+  "min_edge": 0.02,
+  "max_price": 0.985,
+  "paper_bankroll": 100.0,
+  "kelly_fraction": 0.25,
+  "min_bet_usd": 1.0,
+  "max_bet_usd": 10.0,
+  "max_event_exposure_usd": 15.0,
+  "max_total_exposure_usd": 60.0,
+  "max_trades_per_scan": 10,
+  "reserve_usd": 0.0,
+  "block_tiers": [
+    "hard",
+    "final",
+    "rain_month",
+    "rain_month_final",
+    "rain_cli",
+    "rain_cli_final"
+  ],
+  "extra_quake": true,
+  "extra_rain_month": true,
+  "extra_rain_day": true,
+  "quake_mag_margin": 0.2,
+  "rain_month_margin_in": 0.02,
+  "rain_month_margin_frac": 0.02,
+  "rain_month_final_margin_in": 0.03,
+  "rain_metar_min_in": 0.03
+}
